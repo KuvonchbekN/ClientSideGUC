@@ -1,0 +1,106 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+		<groupId>com.wolterskluwer.osa.frameworks</groupId>
+		<artifactId>frameworks-root</artifactId>
+		<version>3.2.18-SNAPSHOT</version>
+	</parent>
+    <groupId>com.wolterskluwer.osatutorial</groupId>
+    <artifactId>goldenusecase-odata-impl</artifactId>
+    <packaging>jar</packaging>
+    <version>1.0.0-SNAPSHOT</version>
+    <name>goldenusecase-odata-impl</name>
+    <url>http://maven.apache.org</url>
+
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <osa-framework.version>3.2.18-SNAPSHOT</osa-framework.version>
+    </properties>
+
+
+
+
+    <dependencies>
+
+        <!-- Logging -->
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <scope>compile</scope>
+            <optional>true</optional>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-slf4j-impl</artifactId>
+            <scope>compile</scope>
+            <optional>true</optional>
+        </dependency>
+
+        <!-- Testing -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+
+        <dependency>
+            <groupId>com.wolterskluwer.osa.frameworks</groupId>
+            <artifactId>osa-odata-mediation</artifactId>
+            <version>${osa-framework.version}</version>
+        </dependency>
+
+
+
+
+
+        <dependency>
+            <groupId>com.wolterskluwer.osa.frameworks</groupId>
+            <artifactId>osa-olingo</artifactId>
+            <version>${osa-framework.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.wolterskluwer.osa.frameworks</groupId>
+            <artifactId>referencedomain-odata-client</artifactId>
+            <version>${osa-framework.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>jakarta.validation</groupId>
+            <artifactId>jakarta.validation-api</artifactId>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate.validator</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.glassfish.expressly</groupId>
+            <artifactId>expressly</artifactId>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>jakarta.el</groupId>
+            <artifactId>jakarta.el-api</artifactId>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>jakarta.xml.bind</groupId>
+            <artifactId>jakarta.xml.bind-api</artifactId>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>javax.xml.bind</groupId>
+            <artifactId>jaxb-api</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+
+
+    </dependencies>
+
+</project>
