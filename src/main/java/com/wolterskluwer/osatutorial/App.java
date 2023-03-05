@@ -1,30 +1,24 @@
 package com.wolterskluwer.osatutorial;
 
 import com.wolterskluwer.osa.common.odata.api.Credentials;
-import com.wolterskluwer.osa.common.odata.api.SecurityToken;
 import com.wolterskluwer.osa.identity.odata.api.Authenticate;
 import com.wolterskluwer.osa.identity.odata.api.AuthenticateResponse;
 import com.wolterskluwer.osa.identity.odata.client.IdentityODataClient;
-import com.wolterskluwer.osa.odata.commons.core.MediaStreamWrapper;
 import com.wolterskluwer.osa.odata.commons.core.ODataVersion;
-import com.wolterskluwer.osa.odata.commons.core.client.Query;
 import com.wolterskluwer.osa.odata.commons.core.client.QueryBuilder;
-import com.wolterskluwer.osa.research.odata.api.*;
+import com.wolterskluwer.osa.research.odata.api.DocumentSearchResultItem;
+import com.wolterskluwer.osa.research.odata.api.ExecuteSearch;
+import com.wolterskluwer.osa.research.odata.api.Search;
+import com.wolterskluwer.osa.research.odata.api.SearchResult;
 import com.wolterskluwer.osa.research.odata.client.ResearchODataClient;
-import com.wolterskluwer.osa.resource.odata.api.ContentSubject;
 import com.wolterskluwer.osa.resource.odata.api.Document;
-import com.wolterskluwer.osa.resource.odata.api.DocumentStream;
-import com.wolterskluwer.osa.resource.odata.api.StreamDocument;
 import com.wolterskluwer.osa.resource.odata.client.ResourceODataClient;
 import lombok.extern.slf4j.Slf4j;
-import org.opensaml.xmlsec.signature.Q;
 import org.springframework.context.support.GenericXmlApplicationContext;
 
-import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
-import java.util.List;
 
 @Slf4j
 public class App {
@@ -53,7 +47,7 @@ public class App {
         assert authenticateResponse != null;
         researchClient.getClientContext().getRequestInfo().setSecurityToken(authenticateResponse.getSecurityToken());
         ExecuteSearch executeSearchRequest = new ExecuteSearch();
-        executeSearchRequest.setQuery("homaging");
+        executeSearchRequest.setQuery("needle"); //this part always changes, to know which query to send, look at the service side "docList" inside "executeSearch()" method
         SearchResult result = null;
         try {
             Search searchResponse= researchClient.getSearchOperationSet().executeSearch(executeSearchRequest);
@@ -78,8 +72,8 @@ public class App {
         }
 
         try {
-            InputStream inputStream = resourceClient.getDocumentEntitySet().getStream(item.getId()).getStream();
-            InputStreamReader reader = new InputStreamReader(inputStream, StandardCharsets.UTF_8);
+            InputStream stream = resourceClient.getDocumentEntitySet().getStream(item.getDocumentId()).getStream();
+            InputStreamReader reader = new InputStreamReader(stream, StandardCharsets.UTF_8);
             final char[] buffer = new char[100];
             final StringBuilder out = new StringBuilder();
             for(;;) {
