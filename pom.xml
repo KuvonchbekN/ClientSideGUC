@@ -2,10 +2,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-		<groupId>com.wolterskluwer.osa.frameworks</groupId>
-		<artifactId>frameworks-root</artifactId>
-		<version>3.2.18-SNAPSHOT</version>
-	</parent>
+        <groupId>com.wolterskluwer.osa.frameworks</groupId>
+        <artifactId>frameworks-root</artifactId>
+        <version>3.2.18-SNAPSHOT</version>
+    </parent>
     <groupId>com.wolterskluwer.osatutorial</groupId>
     <artifactId>goldenusecase-odata-impl</artifactId>
     <packaging>jar</packaging>
@@ -17,12 +17,56 @@
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <osa-framework.version>3.2.18-SNAPSHOT</osa-framework.version>
+        <identity-domain.version>6.0.8</identity-domain.version>
+        <research-domain.version>9.0.1</research-domain.version>
+        <resource-domain.version>11.0.4</resource-domain.version>
     </properties>
 
 
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.wolterskluwer.osa</groupId>
+                <artifactId>identity-domain-apis</artifactId>
+                <version>${identity-domain.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.wolterskluwer.osa</groupId>
+                <artifactId>research-domain-apis</artifactId>
+                <version>${research-domain.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.wolterskluwer.osa</groupId>
+                <artifactId>resource-domain-apis</artifactId>
+                <version>${resource-domain.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+
+    </dependencyManagement>
 
 
     <dependencies>
+        <!--        client domain dependencies-->
+
+        <dependency>
+            <groupId>com.wolterskluwer.osa</groupId>
+            <artifactId>identity-odata-client</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.wolterskluwer.osa</groupId>
+            <artifactId>resource-odata-client</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.wolterskluwer.osa</groupId>
+            <artifactId>research-odata-client</artifactId>
+        </dependency>
 
         <!-- Logging -->
         <dependency>
@@ -31,6 +75,7 @@
             <scope>compile</scope>
             <optional>true</optional>
         </dependency>
+
 
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
@@ -53,18 +98,9 @@
             <version>${osa-framework.version}</version>
         </dependency>
 
-
-
-
-
         <dependency>
             <groupId>com.wolterskluwer.osa.frameworks</groupId>
             <artifactId>osa-olingo</artifactId>
-            <version>${osa-framework.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.wolterskluwer.osa.frameworks</groupId>
-            <artifactId>referencedomain-odata-client</artifactId>
             <version>${osa-framework.version}</version>
         </dependency>
 
@@ -99,8 +135,34 @@
             <artifactId>jaxb-api</artifactId>
             <scope>runtime</scope>
         </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
 
 
     </dependencies>
+
+
+    <build>
+    <plugins>
+
+    <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+        <version>${spring-boot.version}</version>
+        <configuration>
+
+        </configuration>
+        <executions>
+            <execution>
+                <goals>
+                    <goal>repackage</goal>
+                </goals>
+            </execution>
+        </executions>
+    </plugin>
+    </plugins>
+    </build>
 
 </project>

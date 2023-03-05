@@ -5,8 +5,7 @@
         xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
     <!-- Include OData client context -->
-    <import resource="classpath:/osa/referencedomain/odata/client/olingo/referencedomain-odata-context.xml"/>
-
-
-
+    <import resource="classpath:/osa/identity/odata/client/olingo/identity-odata-context.xml" />
+    <import resource="classpath:/osa/research/odata/client/olingo/research-odata-context.xml" />
+    <import resource="classpath:/osa/resource/odata/client/olingo/resource-odata-context.xml" />
 </beans>
