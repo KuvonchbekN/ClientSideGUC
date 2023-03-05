@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="db27263e-abc2-4055-8208-1442734b3d1e" name="Changes" comment="everything is working in the client side." />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/com/wolterskluwer/osa/frameworks/osa-odata-commons-core/3.2.18-SNAPSHOT/osa-odata-commons-core-3.2.18-20230112.140709-8.jar!/com/wolterskluwer/osa/odata/commons/core/client/ResourceSet.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/com/wolterskluwer/osa/frameworks/osa-olingo-core/3.2.18-SNAPSHOT/osa-olingo-core-3.2.18-20230112.140748-8.jar!/com/wolterskluwer/osa/olingo/core/client/AbstractEntitySetImpl.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/com/wolterskluwer/osa/frameworks/referencedomain-odata-client/3.2.18-SNAPSHOT/referencedomain-odata-client-3.2.18-20230112.141915-8.jar!/com/wolterskluwer/osa/referencedomain/odata/client/DefaultReferencedomainODataClient.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/com/wolterskluwer/osa/frameworks/referencedomain-odata-client/3.2.18-SNAPSHOT/referencedomain-odata-client-3.2.18-20230112.141915-8.jar!/osa/referencedomain/odata/client/olingo/referencedomain-odata-context.xml" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/com/wolterskluwer/osa/research-odata-api/9.0.1/research-odata-api-9.0.1.jar!/com/wolterskluwer/osa/research/odata/api/SearchResult.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/com/wolterskluwer/osa/research-odata-client/9.0.1/research-odata-client-9.0.1.jar!/com/wolterskluwer/osa/research/odata/client/operationset/impl/SearchOperationSetImpl.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/com/wolterskluwer/osa/resource-odata-client/11.0.4/resource-odata-client-11.0.4.jar!/com/wolterskluwer/osa/resource/odata/client/ResourceODataClient.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/com/wolterskluwer/osa/resource-odata-client/11.0.4/resource-odata-client-11.0.4.jar!/osa/resource/odata/client/olingo/resource-odata-context.xml" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/com/wolterskluwer/osatutorial/asset-odata-client/1.0.0-SNAPSHOT/asset-odata-client-1.0.0-SNAPSHOT.jar!/com/wolterskluwer/osa/asset/odata/client/operationset/AssetServiceOperationSet.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/com/wolterskluwer/osatutorial/asset-odata-client/1.0.0-SNAPSHOT/asset-odata-client-1.0.0-SNAPSHOT.jar!/osa/asset/odata/client/olingo/asset-odata-context.xml" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/pom.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/wolterskluwer/osatutorial/App.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/resources/context.xml" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectId" id="2KrITYhmO56LiF52Xiianz1aKQ6" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.43146273",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "spring.configuration.checksum": "f65e1137a321799300b95dee6abd3259",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wolterskluwer.osatutorial.App" />
+      <module name="ClientSide" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wolterskluwer.osatutorial.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.App" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="db27263e-abc2-4055-8208-1442734b3d1e" name="Changes" comment="" />
+      <created>1674726284788</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1674726284788</updated>
+      <workItem from="1674726286284" duration="20067000" />
+      <workItem from="1675078794152" duration="5222000" />
+      <workItem from="1675150829780" duration="12638000" />
+      <workItem from="1676025786040" duration="2051000" />
+      <workItem from="1676122126925" duration="7673000" />
+      <workItem from="1677146960409" duration="5969000" />
+      <workItem from="1677235538174" duration="6857000" />
+      <workItem from="1677258846688" duration="686000" />
+      <workItem from="1677488561318" duration="599000" />
+      <workItem from="1677489763007" duration="58739000" />
+    </task>
+    <task id="LOCAL-00001" summary="fixing the client side working until the line 79">
+      <created>1678035420948</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1678035420948</updated>
+    </task>
+    <task id="LOCAL-00002" summary="everything is working in the client side.">
+      <created>1678037111122</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1678037111122</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fixing the client side working until the line 79" />
+    <MESSAGE value="everything is working in the client side." />
+    <option name="LAST_COMMIT_MESSAGE" value="everything is working in the client side." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="com.wolterskluwer.osa.odata.commons.api.exception.ServerErrorException" package="com.wolterskluwer.osa.odata.commons.api.exception" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/wolterskluwer/osa/research-odata-client/9.0.1/research-odata-client-9.0.1.jar!/com/wolterskluwer/osa/research/odata/client/operationset/impl/SearchOperationSetImpl.class</url>
+          <line>58</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/wolterskluwer/osa/research-odata-client/9.0.1/research-odata-client-9.0.1.jar!/com/wolterskluwer/osa/research/odata/client/operationset/impl/SearchOperationSetImpl.class</url>
+          <line>54</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/wolterskluwer/osa/frameworks/osa-odata-commons-core/3.2.18-SNAPSHOT/osa-odata-commons-core-3.2.18-20230112.140709-8.jar!/com/wolterskluwer/osa/odata/commons/core/client/QueryBuilder.class</url>
+          <line>400</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
